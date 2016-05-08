@@ -1,0 +1,143 @@
+body{
+    background-color: #f9f9f9;
+}
+#conteiner{
+    background-color: #ffffff;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:auto;
+    width:1060px;
+    height: 965px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#logo{
+    margin-top:50px;
+    margin-left: 47px;
+}
+/*menu top*/
+.header_menu {
+    position: relative;
+    margin: 40px 50px 0px 47px;;
+    background-color: #535353;
+}
+.header_menu li {
+    display: inline-block; /* Строчно-блочные элементы */
+    width: 125px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+}
+.header_menu a {
+    display: block;
+    padding: 8px 20px;
+    color: white;
+    text-decoration: none;
+    font-family:mariad pro, Arial, sans-serif;
+    font-size: 13.33px;
+    line-height: 1.4;
+
+
+}
+.header_menu li:hover {
+    background: #3f3f3f; /* Цвет фона при наведении курсора мыши */
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.header_menu li:nth-child(2){
+     background: #3f3f3f;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+/*menu left*/
+.main-menu {
+    width: 240px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin: 40px 50px 0px 47px;
+}
+
+.main-menu a {
+    display: block;
+    margin-bottom: -1px;
+    padding: 8px 14px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid grey;
+    font-family:mariad pro, Arial, sans-serif;
+    font-size: 13.33px;
+    line-height: 1.4;
+}
+
+.main-menu a:hover {
+    background: #f9f9f9;
+}
+
+
+.main-menu .sub-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #f9f9f9;
+}
+/*picture*/
+.picture{
+    position: relative;
+    width: 678px;
+    height: 400px;
+    margin: -210px 50px 40px 337px;
+
+}
+/*content*/
+.content {
+    position: relative;
+    margin: 0px 50px 85px 357px;
+    font-family: OpenSans, Arial, sans-serif;
+    font-size: 13.33px;
+    line-height: 1.4;
+}
+/* footer*/
+.footer_menu {
+    margin: 0px 50px 60px 47px;
+    background-color: #e1e1e1;
+}
+.footer_menu li {
+    display: inline-block; /* Строчно-блочные элементы */
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+
+}
+.footer_menu a {
+    display: block;
+    padding: 8px 14px;
+    color: black;
+    text-decoration: none;
+    font-family:mariad pro, Arial, sans-serif;
+    font-size: 13.33px;
+    line-height: 1.4;
+
+
+}
+.footer_menu li:hover {
+    background: #f9f9f9; /* Цвет фона при наведении курсора мыши */
+}
+.footer_menu li:nth-child(2){
+    text-decoration: underline;
+}
+.footer_menu li:last-child{
+     width: 330px;
+    text-align: right;
+}
+.footer_menu li:last-child:hover{
+    background-color: #e1e1e1;
+}
+.footer_menu ul{
+    padding-bottom: 60px;
+}
