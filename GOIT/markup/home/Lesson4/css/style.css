@@ -1,0 +1,180 @@
+/*фон окна*/
+body {
+    background: url("../img/fon.jpg") no-repeat ;
+    background-position:top center;
+    height: 1060px;
+}
+/*fon center*/
+.bg{
+    position: absolute ;
+    z-index: 2;
+    width: 1000px;
+    height: 980px;
+    margin: 38px 0px 30px 185px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    background: white;
+    border-bottom: 3px solid black;
+}
+.logo {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 10px
+
+}
+.text_logo {
+    position: absolute;
+    font: 12px Tahoma;
+    color:#128aa7;
+    margin-left: 100px;
+    margin-top: 115px;
+}
+.contacts{
+   float: right;
+    list-style: none;
+    margin-right:30px;
+    margin-top: 10px;
+    font: 12px Tahoma;
+    color:#128aa7;
+}
+.contacts li:first-child{
+font-weight: bold;
+}
+.country{
+    position: relative;
+    margin: 110px 0px 7px 600px;
+    }
+.country li {
+    display: inline-block; /* Строчно-блочные элементы */
+    width: 60px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.country a {
+    display: block;
+    vertical-align: top;
+    font: 10px Tahoma;
+    color:#128aa7;
+    text-indent: 11%;
+}
+.country .country_text {
+   text-indent: -3%;
+}
+/* main menu*/
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+    top:-2px;
+
+}
+ul.menu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+
+    background-color: #333333;
+    text-decoration: none;
+    width: 122.8px;
+    font: 14px Tahoma;
+   box-shadow: 0 0 10px rgba(51, 51, 51, 0.5);
+    list-style: none;
+
+}
+ul.menu > li > a:hover {
+    background-color: black;
+    border: none;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 142.8px;
+    top: 36px;
+    left: 0;
+    font: 14px Tahoma;
+    background-color: black;
+    border-top: 1px solid black;
+    box-shadow: 0 0 10px rgba(12, 1, 8, 0.5);
+
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 2px;
+    color: white;
+    background-color: #333333;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+ }
+ul.menu > li:first-child{
+    text-align: center;
+}
+ul.menu > li:nth-child(6){
+    text-align: center;
+}
+/*column with content*/
+.fon {
+    width: 1000px;
+    overflow: hidden; /* чтобы лишее обрезалось */
+    font: 14px Tahoma;
+    text-align: center;
+    line-height: 1.8;
+}
+.leftColumn {
+    width: 210px;
+    float: left;
+    background: #edeef0;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    border-right: 1px solid lightgrey;
+}
+.leftColumn_hr_top{
+
+    border-top:  1px solid lightgrey;
+    border-bottom:  1px solid lightgrey;
+    padding-bottom: 190px;
+}
+.centerColumn {
+    width: 580px;
+    float: left;
+    background: white;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+}
+.rightColumn {
+    width: 210px;
+    float: right;
+    background: #edeef0;
+    padding-bottom: 20000px;
+    margin-bottom: -20000px;
+    border-left: 1px solid lightgrey;
+}
+.footer{
+    position: absolute;
+    top:1030px;
+    left:500px;
+    font: 12px Tahoma;
+    color: white;
+}
