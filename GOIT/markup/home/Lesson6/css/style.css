@@ -224,15 +224,15 @@ letter-spacing: 0.4px;
     display: block;
     border: 1px solid grey;
     padding: 0 0px 25px 12px;
-    margin-top: 10px;
+    margin: 10px 0 0 4px;
     border-radius: 1em;
     width: 400px;
-    height: 112px;
+    height: 110px;
     margin-bottom: 15px;
     box-shadow: 0 0 5px rgb(27, 91, 124);
 }
 
-.melk_srift {
+.small_shrift {
     color: #77858b;
     font-size:8px;
 
@@ -360,32 +360,45 @@ letter-spacing: 0.4px;
 .side-menu-title{
     height:25px;
     width:156px;
-    padding:7px 0 3px 32px;
+    padding:7px 0 3px 30px;
     background:url(../img/brand.png) no-repeat;
     color:#114165;
     font:12.7px "Lucida Sans Unicode", Verdana, Arial;
 
 }
+.side-menu-title_brand{
+    height:25px;
+    width:156px;
+    padding:4px 0 3px 36px;
+    margin: -3px 0 10px 0;
+    background:url(../img/brand.png) no-repeat;
+    color:#114165;
+    font:14px "Lucida Sans Unicode", Verdana, Arial;
+
+}
 .side-block-title_left{
      height:13px;
      width:180px;
-     padding:7px 0 10px 30px;
+     padding:6px 0 10px 30px;
      margin:-6px 0 0px 1px;
      background: url("../img/left_disk.png") left bottom no-repeat;
+    font:14px "Lucida Sans Unicode", Verdana, Arial;
  }
 .side-block-title_left_diski{
     height:auto;
     width:180px;
-    padding:7px 0 10px 30px;
-    margin:-20px 0 0px 1px;
+    padding:4px 0 4px 30px;
+    margin:-24px 0 0px 1px;
     background: url("../img/left_disk.png") no-repeat;
+    font:14px "Lucida Sans Unicode", Verdana, Arial;
 }
 .side-block-title_left_boltu{
     height:auto;
     width:180px;
-    padding:7px 0 10px 30px;
-    margin:-20px 0 0px 1px;
+    padding:5px 0 4px 30px;
+    margin:-26px 0 0px 1px;
     background: url("../img/left_disk.png") no-repeat;
+    font:14px "Lucida Sans Unicode", Verdana, Arial;
 }
 .side-menu-block{
     padding:7px 0 5px 0px;
@@ -394,28 +407,30 @@ letter-spacing: 0.4px;
 .side-block-title_right{
     height:auto;
     width:180px;
-    padding:7px 0 7px 31px;
+    padding:7px 0 7px 34px;
     margin:-8px 0 0px 15px;
     background: url("../img/right_disk.png") no-repeat;
+    font:14px Arial;
 }
 .side-block-title_right_disk{
     height:auto;
-
     width:180px;
-    padding:7px 0 7px 31px;
-    margin:-22px 0 0px 15px;
+    padding:5px 0 6px 34px;
+    margin:-17px 0 0px 15px;
     background: url("../img/right_disk.png") no-repeat;
+    font:14px "Lucida Sans Unicode", Verdana, Arial;
+
 }
 
 .side-menu-item{
     display:block;
     width:130px;
-    height:22px;
-    padding:1px 0 0 10px;
+    height:24px;
+    padding:1px 0 0 13px;
     margin:0px 0 0 35px;
     color:#465961;
     font:12.7px "Lucida Sans Unicode", Verdana, Arial;
-    background:url(../img/melk_krug.png) no-repeat 0 4px;
+    background:url(../img/melk_krug.png) no-repeat 0 7px;
     font-weight:normal;
     text-decoration: none ;
 
@@ -425,7 +440,7 @@ letter-spacing: 0.4px;
 .side-menu-item:hover{
     font-size:14px;
     font-weight:bold;
-    background:url(../img/melk_krug_hover.png) no-repeat 0 5px;
+    background:url(../img/melk_krug_hover.png) no-repeat 0 7px;
     color:#0c3256;
     text-decoration: underline;
 
@@ -444,8 +459,8 @@ letter-spacing: 0.4px;
     height:20px;
     width:100%;
     color:#465961;
-    margin:6px 0 5px;
-    padding:0 0 0 50px;
+    margin:4px 0 5px;
+    padding:0 0 0 52px;
     font:12.7px "Lucida Sans Unicode", Verdana, Arial;
 }
 .checkbox-menu-item input{
@@ -464,18 +479,18 @@ input[type="checkbox" ] {
     width:140px;
     height:180px;
     text-align:center;
-    margin:9px 13px 12px 22px;
+    margin:2px 8px 22px 21px;
 }
-.middle-item_right{
-    margin: 9px 13px 12px 13px;
-}
+
+
 .middle-item-company{
     color:#206988;
     font:14.6px "Lucida Sans Unicode", Verdana, Arial;
     font-weight: bold;
+    margin-top:6px ;
 }
 .middle-item-model{
-    margin:0 0 3px 0;
+    margin:-6px 0 3px 0;
     color:#1f2528;
     height:14px;
     font:12.7px "Lucida Sans Unicode", Verdana, Arial;
@@ -487,6 +502,7 @@ input[type="checkbox" ] {
 }
 .middle-item-image a img{
     max-width:136px;
+    margin-left: 3px;
 }
 .middle-item-price{
     margin:3px 0 0 0;
@@ -496,13 +512,17 @@ input[type="checkbox" ] {
 }
 
 .tire-companies{
+
     width:100%;
-    margin:0px 0 28px;
+    margin:0px 0 24px;
     text-align:center;
+}
+.tire-companies img{
+   margin-top:6px;
 }
 
 /*--fotter menu----*/
-.footer{
+footer{
     margin:0px auto;
     width:910px;
     height:100px;
@@ -510,31 +530,38 @@ input[type="checkbox" ] {
     font-family: Arial, sans-serif;
     background-color:#213a4d;
 }
-.footer ul {
+footer ul {
     padding:10px 0 10px 0;
     color:#bec6c9;
 
 
 }
-.footer ul a{
+footer ul a{
     display:inline;
     color:#bec6c9;
     font-size:12px;
+
 }
-.footer ul li{
+footer ul:first-child{
+margin-left: 18px;
+
+}
+footer ul li{
     display:inline;
-margin-right: 10px;
+margin-right: 12px;
+
+
 }
-.footer ul li a:hover{
+footer ul li a:hover{
     color:#52abcb;
     text-decoration:none;
 }
-.footer p{
+footer p{
     padding:0px 0 3px 0;
     color:#d04435;
     font-size:11px;
 }
-.footer p a{
+footer p a{
     color:#d04435;
 }
 
