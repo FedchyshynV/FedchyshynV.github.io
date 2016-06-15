@@ -1,0 +1,14 @@
+
+/* FONT: Open Sans Extrabold */
+
+@font-face {
+    font-family: 'Open Sans Extrabold';
+    src: url('opensans-extrabold-webfont.eot');
+    src: url('opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('opensans-extrabold-webfont.woff2') format('woff2'),
+         url('opensans-extrabold-webfont.woff') format('woff'),
+         url('opensans-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
