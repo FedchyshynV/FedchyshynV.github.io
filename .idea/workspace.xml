@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b3c20d0-89f4-4489-9dad-e3306c4859c1" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/js/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/js/script2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/task1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/task2.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson1/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson1/img/IMG_0855.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson1/task1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson2/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson2/img/IMG_0855.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson2/task1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson3/css/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson3/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson3/img/img.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson3/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson3/task3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/css/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/img/Butan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/img/India.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/img/Maldivu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/img/Nepal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/img/Tibet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/img/fon.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/img/panel_brausera.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/img/picture.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/img/shri_lanka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson4/task4.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/css/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/fonts/helveticaneue-thin-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/fonts/helveticaneue-thin-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/fonts/helveticaneue-thincond-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/fonts/helveticaneue-thincond-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/fonts/helveticaneue-thincondobl-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/fonts/helveticaneue-thincondobl-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/fonts/helveticaneue-thinext-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/fonts/helveticaneue-thinext-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/fonts/helveticaneue-thinextobl-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/fonts/helveticaneue-thinextobl-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/fonts/helveticaneue-thinitalic-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/fonts/helveticaneue-thinitalic-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/homework5_table/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/homework5_table/task5.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/img/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/img/bg2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/img/facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/img/flag2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/img/flag3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson5/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/css/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/botton.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/brand.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/diski_right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/goodyear11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/goodyear2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/goodyear3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/hankook1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/hankook2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/head_home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/head_picture.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/henkook3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/kasper2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/katalog_prod.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/korzina.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/left_disk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/logo_footer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/melk_krug.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/melk_krug_hover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/nokian1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/nokian2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/nokian3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/right_disk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/strelka.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/img/telefon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson6/task6.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/css/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/league_gothic.otf-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/league_gothic.otf-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/league_gothic.otf-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/league_gothic.otf-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/league_gothic.otf-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/leaguegothic-condensedregular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/leaguegothic-condensedregular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/leaguegothic-condensedregular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/leaguegothic-condensedregular-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/opensans-light-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/opensans-light-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/opensans-light-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/fonts/opensans-light-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/arrows.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/blog-updates_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/blog-updates_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/blog-updates_03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/bottom-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/bottom_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/clients_logo_01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/clients_logo_02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/clients_logo_03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/clients_logo_04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/clients_logo_05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/clients_logo_06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/gradient-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/icons.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/slider_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/slider_iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/slider_play-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/img/testimonial-avatar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/Lesson7-8/task7-8-9.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/css/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/leaguegothic-regular-webfont.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/leaguegothic-regular-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/leaguegothic-regular-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/leaguegothic-regular-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/leaguegothic-regular-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/opensans-extrabold-webfont.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/opensans-extrabold-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/opensans-extrabold-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/opensans-extrabold-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/opensans-extrabold-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/opensans-light-webfont.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/opensans-light-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/opensans-light-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/opensans-light-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/fonts/opensans-light-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/arrow-left.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/arrow-right.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/bg--footer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/brands__img01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/brands__img02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/brands__img03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/brands__img04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/brands__img05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/brands__img06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/icons--sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/iphone.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/recent__image--sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/img/testimonial-avatar01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GOIT/markup/home/lesson9/task9.html" afterPath="" />
+    </list>
+    <ignored path="FedchyshynV.github.io.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="FedchyshynV.github.io" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="task1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GOIT/js/home/Lesson1-2/task1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.230769">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GOIT/js/home/Lesson1-2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2692308">
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GOIT/markup/home/lesson1/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.2692308">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GOIT/js/home/Lesson1-2/task2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GOIT/js/home/Lesson1-2/js/script2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GOIT/js/home/Lesson1-2/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.17586207">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GOIT/js/home/Lesson1-2/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+              <folding>
+                <element signature="n#!!doc;n#pow#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/GOIT/js/home/task1.html" />
+        <option value="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/js/task2.html" />
+        <option value="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/task2.html" />
+        <option value="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/js/script.js" />
+        <option value="$USER_HOME$/Downloads/NataliaTepluhina.github.io-master/NataliaTepluhina.github.io-master/GoIT/js/lesson1-2/index.html" />
+        <option value="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/task1.html" />
+        <option value="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/js/script2.js" />
+        <option value="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/index.html" />
+        <option value="$PROJECT_DIR$/GOIT/js/home/Lesson1-2/css/style.css" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FedchyshynV.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FedchyshynV.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FedchyshynV.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FedchyshynV.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FedchyshynV.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GOIT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FedchyshynV.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FedchyshynV.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GOIT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="markup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lesson1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FedchyshynV.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FedchyshynV.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GOIT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Vova\FedchyshynV.github.io\GOIT\js\home\Lesson1-2" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b3c20d0-89f4-4489-9dad-e3306c4859c1" name="Default" comment="" />
+      <created>1466155432428</created>
+      <option name="number" value="Default" />
+      <updated>1466155432428</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24743778" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Downloads/NataliaTepluhina.github.io-master/NataliaTepluhina.github.io-master/GoIT/js/lesson1-2/task1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/NataliaTepluhina.github.io-master/NataliaTepluhina.github.io-master/GoIT/js/lesson1-2/js/script1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/JavaScript/Приклади/Avto/avto.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/JavaScript/Приклади/first/First1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.430693">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/NataliaTepluhina.github.io-master/NataliaTepluhina.github.io-master/GoIT/js/lesson1-2/task2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/NataliaTepluhina.github.io-master/NataliaTepluhina.github.io-master/GoIT/js/lesson1-2/js/script2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/NataliaTepluhina.github.io-master/NataliaTepluhina.github.io-master/GoIT/js/lesson1-2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17586207">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOIT/js/home/Lesson1-2/js/script2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOIT/js/home/Lesson1-2/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc;n#pow#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOIT/js/home/Lesson1-2/task1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOIT/js/home/Lesson1-2/task2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOIT/js/home/Lesson1-2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOIT/markup/home/lesson1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GOIT/js/home/Lesson1-2/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17586207">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

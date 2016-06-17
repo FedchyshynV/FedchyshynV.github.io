@@ -1,0 +1,10 @@
+body {
+    background: url("../img/bg.png") no-repeat;
+    width: 960px;
+    height: 883px;
+    background-position: center;
+}
+img{
+    position: relative;
+    margin: 100px 100px;
+}
