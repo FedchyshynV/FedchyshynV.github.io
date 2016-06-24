@@ -1,0 +1,62 @@
+
+.clearfix{
+    border-top: 50px solid blue;
+    border-bottom: 50px solid blue;
+    padding-bottom: 215px;
+    padding-top: 35px;
+
+}
+
+.tablo {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+
+}
+
+.show {
+    border: 15px solid #000;
+    border-radius: 30px;
+    background: lightblue;
+}
+
+.sec {
+    font-family: sans-serif;
+    font-size: 150px;
+}
+
+.ms {
+    font-family: sans-serif;
+    margin-right: 10.5%;
+    font-size:80px;
+    text-align: right;
+}
+
+.clear,
+.startPause {
+    margin: 3% 1%;
+    border: 15px solid #000;
+    width: 40%;
+    border-radius: 30px;
+    font-size: 120px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.startPause {
+    float: left;
+    background-color: #0a0;
+}
+
+.startPause:hover {
+    background-color: #4f4;
+}
+
+.clear {
+    float: right;
+    background-color: #a00;
+}
+
+.clear:hover {
+    background-color: #f44;
+}

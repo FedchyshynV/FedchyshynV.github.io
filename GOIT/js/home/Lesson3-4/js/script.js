@@ -79,3 +79,8 @@ var butt=document.querySelector('.btn');
     butt.style.paddingRight = '30px';
     butt.style.background = 'lightBlue';
 
+var timerId = setInterval(function() {
+    console.log("this = " +this);
+    alert( "тик" );
+}, 2000);
+
