@@ -1,0 +1,129 @@
+body{
+    background: lightblue;
+}
+
+.frame{
+    border: 4px solid #007fff;
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 270px;
+    border-radius: 20px;
+
+}
+
+#tabs{
+    margin: 10px 10px;
+    border: 2px solid #007fff;
+    padding: 0 10px 10px 10px;
+    border-radius: 20px;
+}
+
+.menu {
+    position: relative;
+    margin: 0 auto;
+    background-color: #007fff;
+    width:98% ;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left:10px;
+
+}
+
+.menu li {
+    float: left;/* Строчно-блочные элементы */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.menu a {
+    display: block;
+    padding: 8px 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-family:helvetica_neueregular,  Tahoma;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.menu li:hover {
+    background: #38b3d8; /* Цвет фона при наведении курсора мыши */
+    height: 35px;
+}
+.active{
+    background: #38b3d8; /* Цвет фона при наведении курсора мыши */
+
+}
+
+/*******************FORM***********************/
+
+form{
+
+    border: 4px solid #007fff;
+    width: 880px;
+    margin-top: 20px;
+    margin: 0 auto;
+    padding: 10px;
+    height: 200px;
+    border-radius: 20px;
+
+}
+
+
+
+div input{
+
+    display: inline-block;
+    margin: 5px;
+    margin-left: 30px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px gray;
+}
+
+#address{
+    margin-left: 40px;
+}
+fieldset div {
+    margin-bottom: 20px;
+
+}
+fieldset .help {
+    text-decoration: none;
+}
+
+
+button{
+    margin-top: -10px;
+    padding: 10px;
+    background: #007fff;
+    border-radius: 10px;
+}
+
+title{
+
+    padding: 3px 10px;
+    font-size: 16px;
+    font-style: normal;
+    border: 1px solid #278969;
+    border-radius: 5px;
+    color: #278969;
+
+}
+form .show {
+    display: inline-block;
+    width: 225px;
+    padding: 5px 5px 5px 10px;
+    margin-left: 5px;
+    vertical-align: middle;
+    border: 2px solid gray;
+    border-radius:5px;
+    box-shadow: 2px 2px 3px gray;
+}
