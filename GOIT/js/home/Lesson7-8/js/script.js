@@ -14,6 +14,6 @@ $(function () {
         $(this).addClass('active');
     }
 
-    $link.on ('mouseover', chooseContent);
+    $link.on ('click', chooseContent);
 });
 
