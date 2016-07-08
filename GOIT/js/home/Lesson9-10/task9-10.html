@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task9-10</title>
+</head>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+
+<script type="text/javascript" src="js/jcarousel.basic.js"></script>
+
+<script src="js/jquery1.9.min.js"></script>
+
+<link rel="stylesheet" href="css/sol.css">
+<script type="text/javascript" src="js/sol.js"></script>
+
+<script type="text/javascript" src="js/jquery.checkbox.js"></script>
+
+
+<body>
+
+<div id="wrapper">
+
+    <div id="top-bar"></div>
+
+    <header>
+        <div id="title" class="content">
+            <h1>Slide Down Menu</h1>
+            <h2>This is a simple slide down nav menu using jQuery and CSS</h2>
+        </div>
+    </header>
+
+<nav>
+    <ul class="content clearfix">
+        <li><a href="#">Nav 1</a></li>
+        <li><a href="#">Nav 2</a></li>
+        <li class="dropdown"> <a href="#">Nav 3</a>
+            <ul class="sub-menu">
+                <li><a href="#">Nav 3.1</a></li>
+                <li><a href="#">Nav 3.2</a></li>
+                <li><a href="#">Nav 3.3</a></li>
+                <li class="dropdown">
+                    <a href="#">Nav 3.4</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Nav 3.4.1</a></li>
+                        <li class="dropdown">
+                            <a href="#">Nav 3.4.2</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Nav 3.4.2.1</a></li>
+                                <li><a href="#">Nav 3.4.2.2</a></li>
+                                <li><a href="#">Nav 3.4.2.3</a></li>
+                                <li><a href="#">Nav 3.4.2.4</a></li>
+                                <li><a href="#">Nav 3.4.2.5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav 3.4.3</a></li>
+                        <li><a href="#">Nav 3.4.4</a></li>
+                        <li><a href="#">Nav 3.4.5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nav 3.5</a></li>
+            </ul>
+        </li>
+
+        <li ><a href="#">Nav 4</a> </li>
+        <li ><a href="#">Nav 5</a>
+
+        </li>
+    </ul>
+</nav>
+
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+                <ul>
+                    <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+                    <li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
+                </ul>
+            </div>
+
+            <p class="photo-credits">
+                Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
+            </p>
+            <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+            <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+            <p class="jcarousel-pagination">
+            </p>
+
+        </div>
+        <div class="select">
+            <select id="my-select" name="character">
+                <option value="Peter">Peter Griffin</option>
+                <option value="Lois">Lois Griffin</option>
+                <option value="Chris">Chris Griffin</option>
+                <option value="Meg">Meg Griffin</option>
+                <option value="Stewie">Stewie Griffin</option>
+                <option value="Cleveland">Cleveland Brown</option>
+                <option value="Joe">Joe Swanson</option>
+                <option value="Quagmire">Glenn Quagmire</option>
+                <option value="Evil Monkey">Evil Monkey</option>
+                <option value="Herbert">John Herbert</option>
+            </select>
+    </div>
+
+</div>
+
+    <div class="checkbox-jquery">
+        <h1 >checkbox JQUERY</h1><br>
+        Чекбокс 1:
+        <span class="niceCheck"><input type="checkbox" name="ch1" ></span>
+    </div>
+
+    <div class="input-css">
+        <h1>checkbox CSS</h1><br>
+        <input type="checkbox" id="test-check1">
+        <label for="test-check1">Чекбокс 1:</label><br>
+
+   </div>
+<script src="js/script.js"></script>
+</body>
+</html>

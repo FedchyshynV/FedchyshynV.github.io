@@ -1,0 +1,249 @@
+body {
+    background-color:rgb(50,50,50);
+    color:rgb(50,50,50);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:300;
+    font-size:16px;
+    line-height:1.5;
+}
+
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+    line-height:1;
+    font-weight: 300;
+}
+a {
+    text-decoration:none;
+    color:rgb(100,150,200);
+}
+a:hover {
+    color:rgb(50,50,50);
+}
+
+
+
+/* =Template
+-------------------------------------------------------------- */
+
+#main {
+    background-color:#fff;
+    padding:30px 0;
+}
+.content {
+    width:80%;
+    max-width:1000px;
+    margin:0 auto;
+
+}
+
+
+/* =Top Bar
+-------------------------------------------------------------- */
+#top-bar {
+    background-color:rgb(100,150,200);
+}
+#top-bar a {
+    color:#fff;
+    font-size:14px;
+    text-transform:uppercase;
+    display:inline-block;
+    margin:0;
+    padding:10px;
+}
+#top-bar a:hover{
+    background-color:rgb(150,200,250);
+}
+
+
+/* =Header
+-------------------------------------------------------------- */
+header {
+    padding:30px 0;
+}
+#title {
+    width:100%;
+    text-align:center;
+}
+#title h1 {
+    color:#fff;
+    font-size: 30px;
+    margin-bottom:10px;
+}
+#title h2 {
+    color:rgb(200,200,200);
+    font-size:20px;
+
+}
+
+
+#wrapper {
+    width:100%;
+    margin:0 auto;
+}
+nav {
+    background-color:rgb(255,100,100);
+    padding:10px 0;
+    position: relative;
+    z-index: 9999;
+}
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    display:inline-block;
+    position:relative;
+}
+
+/* sub navigation */
+nav li ul {
+    background-color:rgb(225,75,75);
+    position:absolute;
+    left:0;
+    top:40px; /* make this equal to the line-height of the links (specified below) */
+    width:200px;
+}
+nav li li {
+    position:relative;
+    margin:0;
+    display:block;
+}
+nav li li ul {
+    position:absolute;
+    top:0;
+    left:200px; /* make this equal to the width of the sub nav above */
+    margin:0;
+}
+
+/* style all links */
+nav a {
+    line-height:40px;
+    padding:0 12px;
+    margin:0 12px;
+}
+nav a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color:rgb(50,50,50);
+}
+
+/* style sub level links */
+nav li li a {
+    border-bottom:solid 1px rgb(200,50,50);
+    margin:0 10px;
+    padding:0;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+/* hide sub menu links */
+ul.sub-menu {
+    display:none;
+}
+
+/* show arrows for dropdowns */
+nav li.dropdown > a {
+    background-image:url('../img/arrow-down.png');
+    background-position:right 13px;
+    background-repeat:no-repeat;
+    padding-right: 16px;
+}
+
+nav li li.dropdown > a {
+    background-image:url('../img/arrow-right.png');
+    background-position:right 16px;
+    background-repeat:no-repeat;
+}
+
+
+
+
+
+/* =Extras
+-------------------------------------------------------------- */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+}
+
+
+
+.select{
+    float: right;
+    margin-right: 100px;
+    margin-top: -100px;
+
+}
+.select h1,span {
+    color: grey;
+}
+
+.input-css{
+    margin-top: -200px;
+    margin-left: 50px;
+    color: white;
+}
+.input-css h1{
+    color: #1caa17;
+}
+input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+label {
+    cursor: pointer;
+}
+label:after {
+    content: " ";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox-2.png);
+    position: relative;
+    top: 3px;
+    margin-left: 15px;
+}
+input[type=checkbox]:checked + label:after {
+    background-position: 0 -17px;
+}
+label:hover:after {
+    background-position: 0 -34px;
+}
+input[type=checkbox]:checked + label:hover:after {
+    background-position: 0 -51px;
+}
+
+
+/*****************jquery checkbox******************************/
+.checkbox-jquery{
+    float: left;
+    color: white;
+    margin-left: 50px;
+    margin-top: -300px;
+}
+
+.checkbox-jquery h1{
+    color: #1caa17;
+}
+
+.niceCheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox.png);
+}
+.niceCheck input {
+    display: none;
+}
