@@ -2,26 +2,22 @@
  * Created by Vova on 07.07.2016.
  */
 
+    $(function(){
 
-    jQuery(document).ready(function(){
-
-        jQuery(".niceCheck").mousedown(
+        $(".niceCheck").mousedown(
             /* при клике на чекбоксе меняем его вид и значение */
             function() {
 
-                changeCheck(jQuery(this));
-
+                changeCheck($(this));
             });
 
-
-        jQuery(".niceCheck").each(
+        $(".niceCheck").each(
             /* при загрузке страницы нужно проверить какое значение имеет чекбокс и в соответствии с ним выставить вид */
             function() {
 
-                changeCheckStart(jQuery(this));
+                changeCheckStart($(this));
 
             });
-
     });
 
 function changeCheck(el)
@@ -32,15 +28,17 @@ function changeCheck(el)
  */
 {
     var el = el,
-        input = el.find("input").eq(0);
-    if(!input.attr("checked")) {
-        el.css("background-position","0 -17px");
-        input.attr("checked", true)
-    } else {
-        el.css("background-position","0 0");
-        input.attr("checked", false)
+         input = el.find("input").eq(0),
+    elPosition = "0 -17px",
+    iAttr = true;
+
+    if (input.attr("checked")) {
+        elPosition = "0 0px";
+        iAttr = false;
     }
-    return true;
+
+        el.css("background-position", elPosition);
+        input.attr("checked", iAttr);
 }
 
 function changeCheckStart(el)
