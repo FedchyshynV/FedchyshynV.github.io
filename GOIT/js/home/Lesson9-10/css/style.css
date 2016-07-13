@@ -231,12 +231,20 @@ input[type=checkbox]:checked + label:hover:after {
     color: white;
     margin-left: 50px;
     margin-top: -300px;
+
 }
 
 .checkbox-jquery h1{
     color: #1caa17;
 }
 
+form {
+    margin-left: 50px;
+}
+input {
+    width: 100px;
+    height: 100px;
+}
 .niceCheck {
     width: 17px;
     height: 17px;

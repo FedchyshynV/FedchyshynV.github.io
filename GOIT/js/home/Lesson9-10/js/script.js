@@ -14,10 +14,9 @@ $(function() {
     );
 });
 
-
 //////////////// select////
 
-$(function() {
-    // initialize sol
-    $('#my-select').searchableOptionList();
-});
+//$( function(){
+//    // initialize sol
+//    $('#my-select').searchableOptionList();
+//});

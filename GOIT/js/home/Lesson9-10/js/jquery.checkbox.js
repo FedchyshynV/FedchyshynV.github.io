@@ -1,24 +1,23 @@
-/**
- * Created by Vova on 07.07.2016.
- */
+jQuery(document).ready(function(){
 
-    $(function(){
+    jQuery(".niceCheck").mousedown(
+        /* при клике на чекбоксе меняем его вид и значение */
+        function() {
 
-        $(".niceCheck").mousedown(
-            /* при клике на чекбоксе меняем его вид и значение */
-            function() {
+            changeCheck(jQuery(this));
 
-                changeCheck($(this));
-            });
+        });
 
-        $(".niceCheck").each(
-            /* при загрузке страницы нужно проверить какое значение имеет чекбокс и в соответствии с ним выставить вид */
-            function() {
 
-                changeCheckStart($(this));
+    jQuery(".niceCheck").each(
+        /* при загрузке страницы нужно проверить какое значение имеет чекбокс и в соответствии с ним выставить вид */
+        function() {
 
-            });
-    });
+            changeCheckStart(jQuery(this));
+
+        });
+
+});
 
 function changeCheck(el)
 /*
@@ -28,17 +27,15 @@ function changeCheck(el)
  */
 {
     var el = el,
-         input = el.find("input").eq(0),
-    elPosition = "0 -17px",
-    iAttr = true;
-
-    if (input.attr("checked")) {
-        elPosition = "0 0px";
-        iAttr = false;
+        input = el.find("input").eq(0);
+    if(!input.attr("checked")) {
+        el.css("background-position","0 -17px");
+        input.attr("checked", true)
+    } else {
+        el.css("background-position","0 0");
+        input.attr("checked", false)
     }
-
-        el.css("background-position", elPosition);
-        input.attr("checked", iAttr);
+    return true;
 }
 
 function changeCheckStart(el)
@@ -53,6 +50,4 @@ function changeCheckStart(el)
     }
     return true;
 }
-
-
 
