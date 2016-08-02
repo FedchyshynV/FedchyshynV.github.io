@@ -23,3 +23,4 @@ $( function() {
     var results = document.getElementById("results");
     results.innerHTML = tmpl("item_tmpl", resume);
 });
+

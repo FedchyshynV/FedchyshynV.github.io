@@ -1,0 +1,56 @@
+* {
+  font-family: Arial;
+}
+
+label,
+input {
+  cursor: pointer;
+}
+
+.modalWindow {
+  background: white;
+  border-radius: 5px;
+  left:50%;
+  margin-left: -230px;
+  padding: 20px;
+  position: absolute;
+  top:10%;
+  width: 650px;
+  z-index: 10;
+}
+
+.modalWindow button {
+  float: right;
+}
+
+.modalWindow-overlay {
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  left:0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.text-center{
+  margin-bottom: 30px;
+}
+
+.text-left {
+  margin-bottom: 30px;
+}
+
+.submit {
+  margin-top: 15px;
+}
+.color_red{
+  color: red;
+}
+.color_green{
+  color: green;
+}
+
+img{
+  height: 20px;
+  width: 20px;
+}
