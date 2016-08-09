@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 15-16</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+</head>
+    <body>
+    <script type="text/html" id="result">
+        <% for (var i = 0; i < hits.length; i++) { %>
+        <div class="search__item">
+            <a class="result__link" href="<%= hits[i].pageURL %>">
+                <img src="<%= hits[i].webformatURL %>" data-tags="<%= hits[i].tags %>" alt="">
+            </a>
+        </div>
+        <% } %>
+
+    </script>
+    <div class="wrapper">
+        <div class="logo"></div>
+        <div class="search">
+            <input type="text" name="" id="">
+        </div>
+        <div class="search-btn">
+            <input type="button" value="Search">
+        </div>
+        <div class="search-results"></div>
+    </div>
+    <div class="modal">
+        <img src="" alt="">
+        <p></p>
+    </div>
+
+    </body>
+    </html>
