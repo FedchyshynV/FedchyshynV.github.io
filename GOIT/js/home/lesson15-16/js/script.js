@@ -32,57 +32,69 @@ $(function() {
         console.log($(this));
     });
 
-
-
-
-
-
-
 });
 
 
 //Homework lesson 16/////////////////////////////////////////////////////////////////
 
-
-var human = {
-    name: '',
-    age: 0,
-    gender: '',
-    height: 0,
-    weight: 0
+function Human(name,age,gender,height,weight) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.height = height;
+    this.weight = weight;
 }
 
-var worker = {
-    job: '',
-    salary: 0,
-    work: function() {
-        console.log('go to the work every day');
-    }
+function Worker(name,age,gender,height,weight,job,salary) {
+    Human.apply(this, arguments);
+    this.job = job;
+    this.salary = salary;
+    this.work = function(){
+        console.log('Worker name is',this.name,
+            "\n age:", this.age,
+            "\n gender:", this.gender,
+            "\n height:", this.height,
+            "\n weight:", this.weight,
+            "\n had job in:", this.job,
+            "\n had salary in USD:", this.salary,
+            "\n go to work every morning.");
+        console.log("*********************************");
+    };
 }
 
-var student = {
-    university: '',
-    grands: 0,
-    watchSerials: function() {
-        console.log('watch tv oll day');
-    }
+function Student(name,age,gender,height,weight,study,grants) {
+    Human.apply(this, arguments);
+    this.study = study;
+    this.grants = grants;
+    this.watchTv = function() {
+        console.log('Student name is',this.name,
+            "\n age:", this.age,
+            "\n gender:", this.gender,
+            "\n height:", this.height,
+            "\n weight:", this.weight,
+            "n had study in:", this.study,
+            "\n had grants in USD:", this.grants,
+            "\n watch TV all day.");
+        console.log("*********************************");
+    };
 }
 
-worker.__proto__ = human;
-student.___proto__ = human;
 
-var vasya = worker;
-vasya.name = 'Jhon';
-vasya.age = 30;
-vasya.job = "Dev";
-vasya.salary = "300$"
-vasya.work();
-console.log(vasya);
-console.log("*******************************")
-var petya = student;
-petya.name = 'Petya';
-petya.age = 20;
-petya.university = "VNTU";
-petya.grands= "300$"
-petya.watchSerials();
-console.log(petya);
+
+Worker.prototype.__proto__ = Human.prototype;
+Worker.prototype.constructor = Worker;
+Worker.prototype.__proto__ = Human.prototype;
+Student.prototype.constructor = Student;
+
+
+var worker1 = new Worker("jhon", 28, 'man', 180, 80,'Police',1000);
+worker1.work();
+
+var worker2 = new Worker('Petya',29, 'man', 181, 81, 'Developer',3500);
+worker2.work();
+
+var student1 = new Student('Jhon',19, 'man', 170, 66,'Garvard',500);
+student1.watchTv();
+
+var student2 = new Student('Alicia',19, 'women', 160, 54,'Oksford',350);
+student2.watchTv();
