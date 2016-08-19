@@ -45,46 +45,48 @@ function Human(name,age,gender,height,weight) {
     this.weight = weight;
 }
 
+Worker.prototype = Object.create(Human.prototype);
+Worker.prototype.constructor = Worker;
+Student.prototype = Object.create(Human.prototype);
+Student.prototype.constructor = Student;
+
 function Worker(name,age,gender,height,weight,job,salary) {
     Human.apply(this, arguments);
     this.job = job;
     this.salary = salary;
-    this.work = function(){
-        console.log('Worker name is',this.name,
-            "\n age:", this.age,
-            "\n gender:", this.gender,
-            "\n height:", this.height,
-            "\n weight:", this.weight,
-            "\n had job in:", this.job,
-            "\n had salary in USD:", this.salary,
-            "\n go to work every morning.");
-        console.log("*********************************");
-    };
 }
+
 
 function Student(name,age,gender,height,weight,study,grants) {
     Human.apply(this, arguments);
     this.study = study;
     this.grants = grants;
-    this.watchTv = function() {
-        console.log('Student name is',this.name,
-            "\n age:", this.age,
-            "\n gender:", this.gender,
-            "\n height:", this.height,
-            "\n weight:", this.weight,
-            "n had study in:", this.study,
-            "\n had grants in USD:", this.grants,
-            "\n watch TV all day.");
-        console.log("*********************************");
-    };
 }
 
+Human.prototype.work = function() {
+    console.log('Worker name is',this.name,
+        "\n age:", this.age,
+        "\n gender:", this.gender,
+        "\n height:", this.height,
+        "\n weight:", this.weight,
+        "\n had job in:", this.job,
+        "\n had salary in USD:", this.salary,
+        "\n go to work every morning.");
+    console.log("*********************************");
+};
 
+Human.prototype.watchTv = function() {
+    console.log('Student name is',this.name,
+        "\n age:", this.age,
+        "\n gender:", this.gender,
+        "\n height:", this.height,
+        "\n weight:", this.weight,
+        "n had study in:", this.study,
+        "\n had grants in USD:", this.grants,
+        "\n watch TV all day.");
+    console.log("*********************************");
+};
 
-Worker.prototype.__proto__ = Human.prototype;
-Worker.prototype.constructor = Worker;
-Worker.prototype.__proto__ = Human.prototype;
-Student.prototype.constructor = Student;
 
 
 var worker1 = new Worker("jhon", 28, 'man', 180, 80,'Police',1000);
