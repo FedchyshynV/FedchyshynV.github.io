@@ -50,31 +50,31 @@ $(function () {
 
   let htmlQuestion = $('#test').html();
 
-  var content = tmpl(htmlQuestion, {
+  let content = tmpl(htmlQuestion, {
     data: questions
   });
 
   $('.questions').append(content);
 
 
-  function checkAnswer(e) {
+  let checkAnswer = (e) => {
 
   e.preventDefault();
 
   let error = false;
 
-  var user = [];
+  let user = [];
 
   for (let i = 0; i < questions.length; i++) {
 
-    var inputs = $('.box' + i +' input:checkbox');
+    let inputs = $('.box' + i +' input:checkbox');
 
-    var userAnswered = {};
+    let userAnswered = {};
       for (let j = 0; j < inputs.length; j++) {
 
-        var checked = inputs[j].checked;
+        let checked = inputs[j].checked;
 
-        var right = questions[i].rightAnswer[j] == true;
+        let right = questions[i].rightAnswer[j] == true;
 
           if (checked !== right) {
             userAnswered[j] = false;
@@ -87,11 +87,11 @@ $(function () {
   };
 
 
-  function modalWindow () {
-    var $modal = $('<div class="modalWindow"><h2 class="text-center">' +
+  let modalWindow = () => {
+    let $modal = $('<div class="modalWindow"><h2 class="text-center">' +
           (error? '<p class="color_red">Вы не сдали тест!</p>' : '<p class="color_green">Вы сдали тест!</p>' ) +'</h2></div>');          // Модалька и условия вывода на ней "сдал" или "не сдал"
-    var $overlay = $('<div class="modalWindow-overlay"></div>');
-    var $buttonOk = $('<button class="btn btn-success">Пройти ещё раз</button>');
+    let $overlay = $('<div class="modalWindow-overlay"></div>');
+    let $buttonOk = $('<button class="btn btn-success">Пройти ещё раз</button>');
 
     $('body').append($modal);
     $('body').append($overlay);
@@ -99,12 +99,12 @@ $(function () {
     $('.modalWindow').append($buttonOk);
 
     for (let i = 0; i < questions.length; i++) {
-      var inputs = $('.box' + i +' input:checkbox');
-      var inputsShowResult =  $('.modalWindow .box' + i +' input:checkbox');
+      let inputs = $('.box' + i +' input:checkbox');
+      let inputsShowResult =  $('.modalWindow .box' + i +' input:checkbox');
 
       for (let j = 0; j < questions[i].answer.length; j++) {
 
-        var checked = inputs[j].checked;
+        let checked = inputs[j].checked;
 
           if ((checked == true)) {
               if ((user[i][j]) == true) {

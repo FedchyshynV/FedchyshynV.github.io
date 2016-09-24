@@ -36,7 +36,7 @@ $(function () {
 
   $('.questions').append(content);
 
-  function checkAnswer(e) {
+  var checkAnswer = function checkAnswer(e) {
 
     e.preventDefault();
 
@@ -65,7 +65,7 @@ $(function () {
       user.push(userAnswered);
     };
 
-    function modalWindow() {
+    var modalWindow = function modalWindow() {
       var $modal = $('<div class="modalWindow"><h2 class="text-center">' + (error ? '<p class="color_red">Вы не сдали тест!</p>' : '<p class="color_green">Вы сдали тест!</p>') + '</h2></div>'); // Модалька и условия вывода на ней "сдал" или "не сдал"
       var $overlay = $('<div class="modalWindow-overlay"></div>');
       var $buttonOk = $('<button class="btn btn-success">Пройти ещё раз</button>');
@@ -76,14 +76,14 @@ $(function () {
       $('.modalWindow').append($buttonOk);
 
       for (var _i = 0; _i < questions.length; _i++) {
-        var inputs = $('.box' + _i + ' input:checkbox');
+        var _inputs = $('.box' + _i + ' input:checkbox');
         var inputsShowResult = $('.modalWindow .box' + _i + ' input:checkbox');
 
         for (var _j = 0; _j < questions[_i].answer.length; _j++) {
 
-          var checked = inputs[_j].checked;
+          var _checked = _inputs[_j].checked;
 
-          if (checked == true) {
+          if (_checked == true) {
             if (user[_i][_j] == true) {
               $(inputsShowResult[_j]).attr({
                 "disabled": true,
