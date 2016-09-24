@@ -33,12 +33,14 @@ imagemin: {
 },
 sass: {
     dist: {
-        options: {
-            style: 'compressed'
-        },
-        files: {
-            'css/style.css': 'css/style.scss'
-        }
+        files: [{
+            expand: true,
+            cwd: 'css',
+            src: ['style.scss'],
+            dest: 'css',
+            ext: '.css'
+
+        }]
     }
 },
  watch: {
