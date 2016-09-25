@@ -1,47 +1,21 @@
-define(                                                                   
-  'model',                                                                
-  [],                                                                     
-  function() {
-    function Model(data) {
-      var self = this;                                                    
-
-      self.data = data;                                                   
-
-      self.addItem = function (item) {                                    
-        if (item.length === 0){                                           
-          return;                                                         
-        };
-
-        self.data.push(item);                                             
-
-        return self.data;                                                 
-      };
-
-      self.removeItem = function (item) {                                 
-        var index = self.data.indexOf(item);                              
-
-        if (index === -1){                                                
-          return;                                                         
-        };
-
-        self.data.splice(index, 1);                                       
-
-        return self.data;                                                 
-      };
-
-      self.editItem = function (item, newItem) {                          
-        var index = self.data.indexOf(item);                              
-
-        if (index === -1) {                                               
-          return;
-        };
-
-        self.data.splice(index, 1, newItem );                             
-
-        return self.data;
-      };
-
+define('model', [],
+  () => function Model(data) {
+    this.data = data;
+    this.addItem = (item) => {
+      if (!item.length) {
+        return;
+      }
+      this.data.push(item);
     };
-    return Model;
-  }
-);
+    this.removeItem = (item) => {
+      let index = this.data.indexOf(item);
+      if (! ~index) {
+        return;
+      }
+      this.data.splice(index, 1);
+    };
+    this.renameItem = (item, index) => {
+      this.data[index] = item;
+      return self.data;
+    };
+  });

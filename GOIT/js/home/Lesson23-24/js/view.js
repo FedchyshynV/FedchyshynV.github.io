@@ -1,42 +1,32 @@
-define(                                                                   // определение модуля, все модули или "куски" программы оборачиваем в метод define
-  'view',                                                                 // название модуля
-  ['jquery', 'model'],                                                    // список зависимостей (что ему нужно подгрузить, прежде чем загрузится этот модуль)
-  function() {
-    function View(model) {                                                                // Берем данные и выводим их на страницу
-      var self = this;
+define(
+	'view', 
+	['jquery', 'model'],
+	() =>	function View(model) {
+			
+			 init = () => {
+				var wrapper = tmpl($('#wrapper-template').html());
 
-      function init() {                                                                   // внутренний метод, вставка каркаса
-        var wrapper = tmpl($('#wrapper-template').html());                                // шаблон wrapper который будем потом вставлять
+				$('.container').append(wrapper);
 
-        $('body').append(wrapper);                                                        
-        self.elements = {                                                                 
-          input: $('.item-value'),                                                        
-          addBtn: $('.item-add'),                                                         
-          listContainer: $('.item-list')                                                  
-        };
-        self.renderList(model.data);                                                      
-      };
+				this.elements = {
+					input: $('.controlls__item-value'),
+					addBtn: $('.controlls__item-add'),
+					listContainer: $('.todo-list'),
+					inputItem: $('.todo-list__input')
+				};
 
-      self.renderList = function (data) {                                                 
-        var list = tmpl($('#list-template').html(), {data: data});                        
-        self.elements.listContainer.html(list);                                           
-      };
+				this.renderList(model.data);
 
-      init();                                                                             
+			};
 
-      self.elements.listContainer.on('focus', '.item-text-edit', function () {            
-        $(this).siblings('.item-delete').fadeOut( 'fast', function () {                   
-          $(this).siblings('.item-edit').fadeIn('fast').css({'visibility' : 'visible'});  
-        });
-      });
+			this.renderList = (data) => {
+				var list = tmpl($('#list-template').html(), {
+					data: data
+				});
 
-      self.elements.listContainer.on('focusout', '.item-text-edit', function () {         
-        $(this).siblings('.item-edit').fadeOut( 'fast', function () {                     
-          $(this).siblings('.item-delete').fadeIn('fast');                                
-        });
-      });
+				this.elements.listContainer.html(list)
+			};
 
-    };
-    return View;
-  }
-);
+			init();
+
+		});

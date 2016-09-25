@@ -1,46 +1,66 @@
-define(                                                                             
-  'controller',                                                                     
-  ['model', 'view'],                                                                
-  function() {
-    function Controller(model, view) {                                              
-      var self = this;
-                                                                                    
-      view.elements.addBtn.on('click', addItem);                                    
-      view.elements.input.on('keydown', function(e){                                
-        if( e.keyCode === 13 ){                                                    
-          addItem();                                                                
-        }
-      });
-      view.elements.listContainer.on('click', '.item-delete', removeItem);          
-      view.elements.listContainer.on('focus', '.item-text-edit', takeItem);         
-      view.elements.listContainer.on('click', '.item-edit', editItem);              
+define(
+	'controller', ['model', 'view'],
+	() => function Controller(model, view) {
+			
 
-      function addItem() {                                                          
-       var newItem = view.elements.input.val();                                    
+			view.elements.addBtn.on('click', addItem);
 
-        model.addItem(newItem);                                                     
-        view.renderList(model.data);                                                
-        view.elements.input.val('');                                                
-      };
+			view.elements.input.on('keypress', (e) => {
+				if (e.which == 13) {
+					var newItem = view.elements.input.val();
+					model.addItem(newItem);
+					view.renderList(model.data);
+					view.elements.input.val('');
+				}
+			});
 
-      function removeItem() {                                                       
-        var item = $(this).attr('data-value');                                      
+			view.elements.listContainer.on('click', '.todo-list__item-delete', removeItem);
 
-        model.removeItem(item);                                                     
-        view.renderList(model.data);                                                
-      };
+			view.elements.listContainer.on('dblclick', '.todo-list__input', function() {
+				$(this).addClass('active').removeAttr('disabled');
+				$(this).one('focusout', renameItem);
+				$(this).on('keypress', (e) => {
 
-      function takeItem () {                                                        
-        self.itemVal = $(this).val();                                               
-      };
+					if (e.which == 13) {
+						var item = $(this).val();
+						var index = $(this).parent().index();
 
-      function editItem () {                                                        
-        self.itemNewVal = $(this).siblings('input').val();                          
-        model.editItem(self.itemVal, self.itemNewVal);                              
-        view.renderList(model.data);                                               
-      };
+						model.renameItem(item, index);
+						$(this).removeClass('active');
+						view.renderList(model.data);
+					};
+				});
+				$(this).parent().mouseleave((event) => {
+					
+					$('body').one('click', () => {
+						$('.todo-list__input').removeClass('active').attr({
+							'disabled': true
+						});
+					});
+				});
+			});
 
-    };
-    return Controller;
-  }
-);
+
+			function addItem() {
+				var newItem = view.elements.input.val();
+
+				model.addItem(newItem);
+				view.renderList(model.data);
+				view.elements.input.val('');
+			};
+
+			function removeItem() {
+				var item = $(this).attr('data-value');
+
+				model.removeItem(item);
+				view.renderList(model.data);
+			};
+
+			function renameItem() {
+				var item = $(this).val();
+				var index = $(this).parent().index();
+
+				model.renameItem(item, index);
+				view.renderList(model.data);
+			};
+		});

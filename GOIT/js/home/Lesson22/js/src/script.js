@@ -146,3 +146,6 @@ $(function () {
 $('.check').on('click', checkAnswer);
 
 });
+
+
+
