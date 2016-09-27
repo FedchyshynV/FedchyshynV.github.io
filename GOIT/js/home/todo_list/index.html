@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson23-24</title>
+	
+	<link rel="stylesheet" href="css/style.css" />
+	<script data-main="js/app.js" src="js/require.js"></script>
+</head>
+
+<body>
+	<div class="container"></div>
+
+	<script type="text/html" id = "wrapper-template">
+		<div class="wrapper">
+			<h1 class="header">ToDo list</h1>
+			
+			<ul class="todo-list"></ul>
+		<div class="controlls clearfix">
+				<input type="text" class="controlls__item-value" placeholder="write here">
+				<button class="controlls__item-add">Add</button>
+			</div>
+		</div>
+	</script>
+
+	<script type="text/html" id = "list-template">
+		<% for (var i =0; i<data.length; i++) { %>
+			<li class="todo-list__item animated 
+				<% if (i%2) {%>zoomInRight<%} else { %>
+					zoomInLeft
+				<%}%>"><input  disabled = "disabled" class="todo-list__input" type="text" value="<%= data[i] %>"> <span data-value="<%= data[i] %>" class="todo-list__item-delete icon-cancel"><img src="img/button_bad.png"> </span></li>
+		<%}; %>
+	</script>
+
+</body>
+</html>
