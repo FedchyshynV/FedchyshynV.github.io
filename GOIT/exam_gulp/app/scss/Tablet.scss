@@ -92,9 +92,6 @@
       letter-spacing: -0.3px;
       text-align: center; 
       }
-    &__mobile {
-      display: none; 
-      }
     &__list {
       width: 100%;
       margin: 0 auto; 
@@ -233,12 +230,14 @@
     width: 940px;
     margin: 100px auto 97px; 
     &__title {
+     font-family: Montserrat;
+      margin-left: -3px;
+      margin-bottom: 32px;
       color: #333;
-      margin: 0 13px 35px;
-      font-family: Montserrat;
       font-size: 22px;
-      line-height: 25px;
-      text-align: center; 
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: center;
     }
     &__img {
       max-width: 100%;
@@ -271,9 +270,14 @@
     color: #333;
     text-align: center; 
    &__title {
-      font-family: Montserrat;
+     font-family: Montserrat;
+      margin-left: -3px;
+      margin-bottom: 32px;
+      color: #333;
       font-size: 22px;
-      line-height: 25px; 
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: center;
       }
     &__text {
       margin: 35px 0 28px;

@@ -20,9 +20,9 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', ['browserSync', 'sass'], function (){
-  gulp.watch('app/scss/**/*.scss', ['sass']); 
+  gulp.watch(['app/scss/**/*.scss','app/css/**/*.css'], ['sass']); 
   // Обновляем браузер при любых изменениях в HTML или JS
-  gulp.watch('app/dist/index.html', browserSync.reload); 
+  gulp.watch('app/*.index.html', browserSync.reload); 
   gulp.watch('app/js/**/*.js', browserSync.reload); 
 });
 
@@ -43,7 +43,7 @@ gulp.task('useref', function () {
 });
 
 gulp.task('images', function(){
-  return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+  return gulp.src('app/img/**/*.+(png|jpg|jpeg|gif|svg)')
   // кэширование изображений, прошедших через imagemin
   .pipe(cache(imagemin({
       interlaced: true
@@ -56,8 +56,13 @@ gulp.task('fonts', function() {
   .pipe(gulp.dest('dist/fonts'))
 })
 
+gulp.task('allFiles', function() {
+  return gulp.src('app/css/allStyle.css')
+  .pipe(gulp.dest('dist/css'))
+})
+
 gulp.task('clean:dist', function() {
-  return del.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
+  return del.sync(['dist/**/*', '!dist/img', '!dist/img/**/*']);
 });
 
 gulp.task('default', function(callback) {
@@ -70,7 +75,7 @@ gulp.task('build', function(callback) {
   runSequence(
     'clean:dist',
     'sass',
-    ['useref', 'images', 'fonts'],
+    ['useref', 'images', 'fonts', 'allFiles'],
     callback
   )
 })

@@ -78,8 +78,6 @@
       font-weight: 700;
       letter-spacing: -0.3px;
       text-align: center; }
-    .about__mobile {
-      display: none; }
     .about__list {
       width: 100%;
       margin: 0 auto; }
@@ -194,11 +192,13 @@
     width: 940px;
     margin: 100px auto 97px; }
     .ideas__title {
-      color: #333;
-      margin: 0 13px 35px;
       font-family: Montserrat;
+      margin-left: -3px;
+      margin-bottom: 32px;
+      color: #333;
       font-size: 22px;
-      line-height: 25px;
+      font-weight: 700;
+      line-height: 1.2;
       text-align: center; }
     .ideas__img {
       max-width: 100%;
@@ -227,8 +227,13 @@
     text-align: center; }
     .search__title {
       font-family: Montserrat;
+      margin-left: -3px;
+      margin-bottom: 32px;
+      color: #333;
       font-size: 22px;
-      line-height: 25px; }
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: center; }
     .search__text {
       margin: 35px 0 28px;
       font-family: Roboto;
