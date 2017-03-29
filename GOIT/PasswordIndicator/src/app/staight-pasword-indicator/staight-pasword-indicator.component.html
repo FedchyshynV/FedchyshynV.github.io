@@ -1,0 +1,13 @@
+<input (keyup)="onKey($event)" placeholder="Password" type="{{inputType}}" class="form-control" [(ngModel)]="password">
+<label>
+      <input type="checkbox" [(ngModel)]="showPassword"> Show Password
+</label>
+<p>
+    <span *ngFor="let item of straights; let i = index;" class="indicator">
+                 <span *ngIf="i < currentSrtaight" [style.background] = "color" ></span>
+    <span *ngIf="i >= currentSrtaight" style="background-color: #ccc;"></span>
+    </span>
+</p>
+<p class="text-center">
+    <button type="submit" class="btn btn-primary" [disabled]="password?.length < 6">Submit</button>
+</p>
