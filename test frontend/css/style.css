@@ -126,9 +126,9 @@ fieldset{
 	background-image: -moz-linear-gradient(top, #e2e2e2, #f2f2f2);
 	background-image: -ms-linear-gradient(top, #e2e2e2, #f2f2f2);
 	background-image: -o-linear-gradient(top, #e2e2e2, #f2f2f2);
-	-moz-box-shadow: 0.3px 0px 0px grey inset, 0.3px 0.5px 0 #444;
-	-webkit-box-shadow: 0.3px 0px 0px grey inset, 0.3px 0.5px 0 #444;
-	box-shadow: 0.3px 0px 0px grey inset, 0.3px 0.5px 0 #444;
+	-moz-box-shadow: 0 0px 0px grey inset, 0 0.3px 0 #444;
+	-webkit-box-shadow: 0 0px 0px grey inset, 0 0.3px 0 #444;
+	box-shadow: 0 0px 0px grey inset, 0 0.3px 0 #444;
 }
 
 .botton a{
