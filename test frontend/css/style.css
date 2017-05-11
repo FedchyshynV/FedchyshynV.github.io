@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	margin: 150px 150px 0;
+
+}
+.rating-marks, .progress-bar {
+	float: left;
+
+}
+.progress-bar{
+	margin-left: 18%;
+}
+.botton{
+	float: right;
+}
+
+.rating-marks {
+	float: left;
+}
+
+/**************    Rating  **********************/
+.rating label {
+	float: right;
+	width: 16px; 
+	height: 16px; 
+	overflow: hidden;
+	white-space: nowrap; 
+	cursor: url(../img/hand.png), pointer; 
+	text-indent: -9999px;
+}
+.rating:not(:checked) > input { 
+	display: none;
+}
+.rating:not(:checked) > label {
+	background: url('../img/star-without-color.png') ;
+
+
+}
+.rating > input:checked ~ label {
+	width: 16px; 
+	height: 16px; 
+	background: url('../img/star-color.png') ;
+}
+.rating:not(:checked) > label:hover,
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label,
+.rating:not(:checked) > label:hover ~ label {
+	background: url('../img/star-color.png');
+}
+
+fieldset{
+	border: 0;
+	margin: 20px 100px ;
+}
+/**************    / Rating  **********************/
+
+/**************    Progress-bart  *****************/
+
+
+.progress-b {
+	font-size: 9px;
+	font-family: Verdana;
+	background-color: #fff;
+	height: 13px;
+	width: 210px;
+	margin: 30px 0;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	-moz-box-shadow: 0 1px 1px grey inset, 0 0 0 #444;
+	-webkit-box-shadow: 0 1px 1px grey inset, 0 0 0 #444;
+	box-shadow: 0 1px 5px grey inset, 0 0 0 #444;
+
+}
+
+.progress-b span {
+	display: inline-block;
+	height: 13px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 25px;
+	
+}
+
+
+
+.green span {
+	
+	background: url(../img/progree_green.png);
+}
+
+.progress-b p{
+	margin: 0px 100px;
+}
+
+/**************   / Progress-bart  ******************/
+/**************   Botton  ******************/
+
+
+.botton h3{
+
+	margin-bottom: 30px;
+
+}
+
+.botton .my_btn {
+	display: block;
+	font-size: 11px;
+	font-family: Verdana;
+	color: black;
+	margin-left: 40px; 
+	cursor: pointer;
+	border: 1px solid #a8a8a8;
+	border-radius: 7px;
+	text-decoration: none;
+	width: 80px;
+	height: 18px;
+	background: linear-gradient(to bottom, #e2e2e2 0%,#f2f2f2 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e2e2e2), to(#f2f2f2));
+	background-image: -webkit-linear-gradient(top, #e2e2e2, #f2f2f2);
+	background-image: -moz-linear-gradient(top, #e2e2e2, #f2f2f2);
+	background-image: -ms-linear-gradient(top, #e2e2e2, #f2f2f2);
+	background-image: -o-linear-gradient(top, #e2e2e2, #f2f2f2);
+	-moz-box-shadow: 0.3px 0px 0px grey inset, 0.3px 0.5px 0 #444;
+	-webkit-box-shadow: 0.3px 0px 0px grey inset, 0.3px 0.5px 0 #444;
+	box-shadow: 0.3px 0px 0px grey inset, 0.3px 0.5px 0 #444;
+}
+
+.botton a{
+	text-align: center;
+	padding-top: 2px;
+	margin-bottom: 100px;
+
+}
+
+.my_btn:hover{
+	background: #a8a8a8;
+}
+
+.my_btn:active{
+	background: #a8a8a8;
+}
+
+.my_btn:focus{
+	background: #a8a8a8;
+}
+
+/************** /  Botton  ******************/
