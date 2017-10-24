@@ -1,5 +1,5 @@
-$('.dropDownMenu').hide();
-$('.dynamicBoxes').hide();
+
+
 
 
 $('.languages li').click( function(){
@@ -11,12 +11,3 @@ $('.languages li').click( function(){
     }
 });
 
-// jQuery(function($){
-// 	var max_col_height = 0; 
-// 	$('section').each(function(){ 
-// 		if ($(this).height() > max_col_height) { 
-// 			max_col_height = $(this).height();
-// 		}
-// 	});
-// 	$('section').height(max_col_height);
-// });
