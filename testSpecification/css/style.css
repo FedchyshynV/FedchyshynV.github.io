@@ -31,18 +31,18 @@ img.logo{
 	left: 0;
 }
 
-nav{
+.nav{
 	height: 105px;
 	background-color: #cccccc;
 	margin-bottom: 10px;
 
 }
 
-nav ul.menu{
+.nav ul.menu{
 	margin-left: 10px;
 }
 
-nav ul.menu>li{
+.nav ul.menu>li{
 	float: left;
 	text-decoration: none;
 	background-color: #666666;
@@ -53,12 +53,12 @@ nav ul.menu>li{
 	text-align: center;
 	border-right: 2px solid #cccccc;
 }
-nav ul.menu>li:hover{
+.nav ul.menu>li:hover{
 	background-color: #000000;
 }
 
 
-nav ul.menu>li:last-child:after{
+.nav ul.menu>li:last-child:after{
 	content: "";
     display: inline-block;
     background: url("../img/menuArrowDown.png") no-repeat center right;
@@ -71,26 +71,35 @@ ul.dropDownMenu{
 	position: absolute;
 	top: 105px;
 	background-color: #000000;
-	width: 140px;
+	width: 147px;
 	z-index: 9999;
 	color: #fff;
 
 }
 
-  ul.dropDownMenu li {
+ul.dropDownMenu {
+    display:none;
+}
+
+ul.dropDownMenu li {
 	width: 100%;
-	float: left;
-	padding: 5px 5px 5px 5px;
+	padding: 6px 5px 6px 5px;
 	border-bottom: 1px solid #515151;
+	line-height: 13px;
+	text-align: left;
+
+}
+ul.dropDownMenu li a {
 	font-size: 12px;
+	font-weight: normal;
 
-  }
+}
 
-nav ul.languages{
+.nav ul.languages{
 	margin-right: 10px;
 }
 
-nav ul.languages li{
+.nav ul.languages li{
 	float: right;
 	margin-top: 75px;
 	padding-left: 5px;
@@ -100,7 +109,7 @@ nav ul.languages li{
 .languages li {
 	opacity: .7;
 }
-nav .languages li:hover{
+.nav .languages li:hover{
 	opacity: 1;
 }
 
@@ -109,7 +118,7 @@ nav .languages li:hover{
 }
 
 
-nav a{
+.nav a{
 	color: #ffffff;
 	font-size: 14px;
 	font-family: Tahoma;
@@ -117,29 +126,31 @@ nav a{
 	text-decoration: none;
 }
 
-main{
+.main{
 	min-height: 100%;
 	border-bottom: 10px solid #ffffff;
 }
 
-main section a{
+.main .section a{
 	text-decoration: none;
 	color: #ffffff;
 }
 
-main section.section_1{
+.main .section.section_1{
 	float: left;
 	width: 70%;
+	height: 100%;
 }
-main section div.block_1{
+.main .section div.block_1{
 	background-color: #515151;
 	border: 10px solid #cccccc;
 	padding: 10px;
 	color: #ffffff;
-	height: 100%;
+	min-height: 77.5vh;
+
 }
 
-main section div.block_1 h1.title{
+.main .section div.block_1 h1.title{
 	font-size: 48px;
 	font-family: HelveticaInserat LT;
 	padding: 20px 0 20px 15px;
@@ -148,7 +159,7 @@ main section div.block_1 h1.title{
 	margin-bottom: 15px;
 
 }
-main section div.block_1 p{
+.main .section div.block_1 p{
 	font-size: 12px;
 	font-family: Tahoma;
 	padding: 0 10px 20px 10px;
@@ -157,31 +168,102 @@ main section div.block_1 p{
 
 }
 
-main section.section_2{
+.main .section.section_2{
 	float: right;
 	width: 30%;
 }
-main section div.block_2{
+.main .section div.block_2{
 	background-color: #515151;
 	border: 10px solid #a3a3a3;
 	padding: 10px;
-	height: 45em;
+	font-size: 12px;
+	font-family: Tahoma;
+	font-weight: normal;
 	
 }
 
-.banner{
-	background-color: #000000;
-	height: 250px;
-	color: #ffffff;
+.tab {
+	position: relative;
+	margin-bottom: 1px;
+	width: 100%;
+	color: #fff;
+	overflow: hidden;
+}
+input {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+label {
+	position: relative;
+	display: block;
+	padding: 0 0 0 1em;
+	background: #000;
+	font-weight: normal;
+	line-height: 3;
+	cursor: pointer;
+}
+.black label {
+	background: #000;
+}
+.tab-content {
+	max-height: 0;
+	overflow: hidden;
+	background: #000;
+	-webkit-transition: max-height .35s;
+	-o-transition: max-height .35s;
+	transition: max-height .35s;
+}
+.black .tab-content {
+	background: #000;
+}
+.tab-content p {
+	margin: 1em;
 }
 
+input:checked ~ .tab-content {
+	max-height: 10em;
+}
 
+label::after {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	width: 3em;
+	height: 3em;
+	line-height: 3;
+	text-align: center;
+	-webkit-transition: all .35s;
+	-o-transition: all .35s;
+	transition: all .35s;
+}
+
+input[type=radio] + label::after {
+	content: "";
+	display: inline-block;
+	background: url("../img/arrowRight.png") no-repeat center right;
+	float: right;
+	margin-right: 5px;
+	width: 14px;
+	height: 32px;
+}
+
+input[type=radio]:checked + label::after {
+ 	content: "";
+ 	display: inline-block;
+ 	background: url("../img/arrowDown.png") no-repeat center right;
+ 	float: right;
+ 	margin-right: 5px;
+ 	width: 14px;
+ 	height: 32px;
+}
 div.clear {
 	clear: both;
 	height: 40px;
 }
 
-footer{
+.footer{
 	max-width: 1280px;
 	min-width: 800px;
 	margin: auto;
@@ -191,95 +273,16 @@ footer{
 
 }
 
-footer ul:first-child{
+.footer ul:first-child{
 	float: left;
 	line-height: 40px;
 	padding-left: 20px;
 }
-footer ul:last-child li{
+.footer ul:last-child li{
 	float: right;
 	line-height: 40px;
 	padding-right: 20px;
 }
-  footer ul:last-child li a{
+.footer ul:last-child li a{
 	  color: #000000;
-  }
-
-
-
-  .tab {
-	  position: relative;
-	  margin-bottom: 1px;
-	  width: 100%;
-	  color: #fff;
-	  overflow: hidden;
-  }
-  input {
-	  position: absolute;
-	  opacity: 0;
-	  z-index: -1;
-  }
-  label {
-	  position: relative;
-	  display: block;
-	  padding: 0 0 0 1em;
-	  background: #000;
-	  font-weight: bold;
-	  line-height: 2;
-	  cursor: pointer;
-  }
-  .blue label {
-	  background: #000;
-  }
-  .tab-content {
-	  max-height: 0;
-	  overflow: hidden;
-	  background: #000;
-	  -webkit-transition: max-height .35s;
-	  -o-transition: max-height .35s;
-	  transition: max-height .35s;
-  }
-  .blue .tab-content {
-	  background: #000;
-  }
-  .tab-content p {
-	  margin: 1em;
-  }
-
-  input:checked ~ .tab-content {
-	  max-height: 10em;
-  }
-
-  label::after {
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	  display: block;
-	  width: 3em;
-	  height: 3em;
-	  line-height: 3;
-	  text-align: center;
-	  -webkit-transition: all .35s;
-	  -o-transition: all .35s;
-	  transition: all .35s;
-  }
-
-  input[type=radio] + label::after {
-	  content: "";
-	  display: inline-block;
-	  background: url("../img/arrowRight.png") no-repeat center right;
-	  float: right;
-	  margin-right: 5px;
-	  width: 14px;
-	  height: 32px;
-  }
-
-  input[type=radio]:checked + label::after {
-	  content: "";
-	  display: inline-block;
-	  background: url("../img/arrowDown.png") no-repeat center right;
-	  float: right;
-	  margin-right: 5px;
-	  width: 14px;
-	  height: 32px;
   }
