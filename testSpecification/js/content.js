@@ -103,6 +103,7 @@ table(0);
 document.querySelector("#dvTable").addEventListener("click", function(){
     var dvTable = document.querySelector("tbody");
     dvTable.innerHTML = "";
+    resizeColumn();
     var count = 1;
     table(count);
 });
