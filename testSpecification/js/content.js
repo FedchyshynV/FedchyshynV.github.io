@@ -100,7 +100,7 @@ xhr.send(null);
 };
 table(0);
 
-document.querySelector("#dvTable").addEventListener("click", function(){
+document.querySelector("#dvTable tr").addEventListener("click", function(){
     var dvTable = document.querySelector("tbody");
     dvTable.innerHTML = "";
     resizeColumn();

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Country Search</title>
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+<style>
+body{
+  background-color: lightblue;
+}
+
+input[type="text" i] {
+    padding: 3px 0px;
+    width: 200px;
+}
+.wrapper{
+position: relative;
+margin: 20vh 0 0 40vw;
+
+}
+li{
+  list-style: none;
+}
+  a{
+    position: relative;
+    top: -18px;
+    margin-left: 135px;
+  }
+    .ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;    
+  }
+  #ui-id-1 {
+      width: 203px;
+  }
+  #ui-id-1:before {
+    display: block;    
+    font-size: 0.8em;
+    text-align: center;
+    content: 'Please select your country';
+    padding: 10px 0;
+  }
+#ui-id-2, #ui-id-3{
+    display: none;
+    top: 23.4062px;
+    left: 0.313px;
+    width: 202px;
+    padding: 10px 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+.visible-country{
+  position: relative;
+  margin: -6vh 0 0 20vw;
+}
+</style>
+</head>
+
+<body>
+
+<script>
+
+ko.bindingHandlers.ko_autocomplete = {
+    init: function (element, params) {
+        $(element).autocomplete(params());
+    },
+    update: function (element, params) {
+        $(element).autocomplete("option", "source", params().source);
+
+    }
+};
+
+
+
+$(function() {
+    
+    var availableTags = [
+        {label:"Afghanistan"},
+        {label:"Albania"},
+        {label:"Algeria"},
+        {label:"Andorra"},
+        {label:"Angola"},
+        {label:"Albania"},
+        {label:"Antigua and Barbuda"},
+        {label:"Argentina"},
+        {label:"Armenia"},
+        {label:"Argentina"},
+        {label:"Australia"},
+        {label:"Argentina"},
+        {label:"Austria"},
+        {label:"Azerbaijan"},
+        {label:"Argentina"},
+        {label:"Bahamas"},
+        {label:"Bahrain"},
+        {label:"Bangladesh"},
+        {label:"Barbados"},
+        {label:"Belarus"},
+        {label:"Belgium"},
+        {label:"Belize"},
+        {label:"Benin"},
+        {label:"Bhutan"},
+        {label:"Bolivia"},
+        {label:"Bosnia and Herzegovina"},
+        {label:"Botswana"},
+        {label:"Brazil"},
+        {label:"Brunei"},
+        {label:"Bulgaria"},
+        {label:"Burkina Faso"},
+        {label:"Burundi"},
+        {label:"Cambodia"},
+        {label:"Cameroon"},
+        {label:"Canada"},
+        {label:"Cape Verde"},
+        {label:"Central African Republic"},
+        {label:"Chad"},
+        {label:"Chile"},
+        {label:"China"},
+        {label:"Colombi"},
+        {label:"Comoros"},
+        {label:"Congo (Brazzaville)"},
+        {label:"Congo"},
+        {label:"Costa Rica"},
+        {label:"Cote d'Ivoire"},
+        {label:"Croatia"},
+        {label:"Cuba"},
+        {label:"Cyprus"},
+        {label:"Czech Republic"},
+        {label:"Denmark"},
+        {label:"Djibouti"},
+        {label:"Dominica"},
+        {label:"Dominican Republic"},
+        {label:"East Timor (Timor Timur)"},
+        {label:"Ecuador"},
+        {label:"Egypt"},
+        {label:"El Salvador"},
+        {label:"Equatorial Guinea"},
+        {label:"Eritrea"},
+        {label:"Estonia"},
+        {label:"Ethiopia"},
+        {label:"Fiji"},
+        {label:"Finland"},
+        {label:"France"},
+        {label:"Gabon"},
+        {label:"Gambia, The"},
+        {label:"Georgia"},
+        {label:"Germany"},
+        {label:"Ghana"},
+        {label:"Greece"},
+        {label:"Grenada"},
+        {label:"Guatemala"},
+        {label:"Guinea"},
+        {label:"Guinea-Bissau"},
+        {label:"Guyana"},
+        {label:"Haiti"},
+        {label:"Honduras"},
+        {label:"Hungary"},
+        {label:"Iceland"},
+        {label:"India"},
+        {label:"Indonesia"},
+        {label:"Iran"},
+        {label:"Ireland"},
+        {label:"Israel"},
+        {label:"Italy"},
+        {label:"Jamaica"},
+        {label:"Japan"},
+        {label:"Jordan"},
+        {label:"Kazakhstan"},
+        {label:"Iran"},
+        {label:"Kenya"},
+        {label:"Kiribati"},
+        {label:"Korea, North"},
+        {label:"Korea, South"},
+        {label:"Kuwait"},
+        {label:"Kyrgyzstan"},
+        {label:"Laos"},
+        {label:"Latvia"},
+        {label:"Lebanon"},
+        {label:"Lesotho"},
+        {label:"Liberia"},
+        {label:"Libya"},
+        {label:"Liechtenstein"},
+        {label:"Lithuania"},
+        {label:"Luxembourg"},
+        {label:"Macedonia"},
+        {label:"Madagascar"},
+        {label:"Malawi"},
+        {label:"Malaysia"},
+        {label:"Maldives"},
+        {label:"Mali"},
+        {label:"Malta"},
+        {label:"Marshall Islands"},
+        {label:"Mauritania"},
+        {label:"Mauritius"},
+        {label:"Mexico"},
+        {label:"Moldova"},
+        {label:"Monaco"},
+        {label:"Mongolia"},
+        {label:"Morocco"},
+        {label:"Mozambique"},
+        {label:"Myanmar"},
+        {label:"Namibia"},
+        {label:"Nauru"},
+        {label:"Nepal"},
+        {label:"Netherlands"},
+        {label:"New Zealand"},
+        {label:"Nicaragua"},
+        {label:"Niger"},
+        {label:"Nigeria"},
+        {label:"Norway"},
+        {label:"Oman"},
+        {label:"Pakistan"},
+        {label:"Palau"},
+        {label:"Panama"},
+        {label:"Papua New Guinea"},
+        {label:"Paraguay"},
+        {label:"Philippines"},
+        {label:"Poland"},
+        {label:"Portugal"},
+        {label:"Qatar"},
+        {label:"Romania"},
+        {label:"Russia"},
+        {label:"Rwanda"},
+        {label:"Saint Kitts and Nevis"},
+        {label:"Saint Lucia"},
+        {label:"Saint Vincent"},
+        {label:"Samoa"},
+        {label:"San Marino"},
+        {label:"Sao Tome and Principe"},
+        {label:"Saudi Arabia"},
+        {label:"Senegal"},
+        {label:"Serbia and Montenegro"},
+        {label:"Seychelles"},
+        {label:"Sierra Leone"},
+        {label:"Singapore"},
+        {label:"Slovakia"},
+        {label:"Slovenia"},
+        {label:"Solomon Islands"},
+        {label:"Somalia"},
+        {label:"South Africa"},
+        {label:"Spain"},
+        {label:"Sri Lanka"},
+        {label:"Sudan"},
+        {label:"Suriname"},
+        {label:"Swaziland"},
+        {label:"Sweden"},
+        {label:"Switzerland"},
+        {label:"Syria"},
+        {label:"Taiwan"},
+        {label:"Tajikistan"},
+        {label:"Tanzania"},
+        {label:"Thailand"},
+        {label:"Togo"},
+        {label:"Tonga"},
+        {label:"Trinidad and Tobago"},
+        {label:"Tunisia"},
+        {label:"Turkey"},
+        {label:"Turkmenistan"},
+        {label:"Tuvalu"},
+        {label:"Uganda"},
+        {label:"Ukraine"},
+        {label:"United Arab Emirates"},
+        {label:"United Kingdom"},
+        {label:"United States"},
+        {label:"Uruguay"},
+        {label:"Uzbekistan"},
+        {label:"Vanuatu"},
+        {label:"Vatican City"},
+        {label:"Venezuela"},
+        {label:"Vietnam"},
+        {label:"Yemen"},
+        {label:"Zambia"},
+        {label:"Zimbabwe"}
+
+      ];
+            
+        // knockout view model                    
+        var ViewModel = function(){
+        
+            var self = this;
+            
+            self.langName = ko.observable();
+            self.selectedLangs = ko.observableArray();
+            
+            // return some programming languages
+            self.getLangs = function(){
+              return availableTags;
+            }
+
+            self.removePerson = function(item) {
+              self.selectedLangs.remove(item);
+       
+            }  
+
+            // user clicked on a auto complete item
+            self.addLang = function(event, ui){
+                    
+                $(event.target).val("");
+                
+                var lang = ui.item.label;
+                var id = ui.item.value;
+
+                self.selectedLangs.push(lang);
+
+                                  
+                return false;
+            };
+
+                    
+            return {
+                getLangs : self.getLangs,
+                addLang : self.addLang,
+                langName : self.langName,
+                selectedLangs: self.selectedLangs,
+                removePerson: self.removePerson                      
+            }                    
+        };
+    
+        //bind knockout model
+        ko.applyBindings(new ViewModel());
+
+        $("#name-search").focusin(function() {
+          $("#ui-id-2").show();
+      }).focusout(function () {
+          $("#ui-id-2").hide();
+      });
+
+
+            
+});
+
+</script>
+<div class="wrapper">
+<input type="text"  id="name-search" data-bind="value: langName, 
+ko_autocomplete: { source: getLangs() , select: addLang }"/>
+<div style="margin-top:1em">
+
+<ul id="ui-id-2" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front" ><li class="ui-menu-item"><div id="ui-id-22" tabindex="-1" class="ui-menu-item-wrapper">Start typing</div></li></ul>
+    <div class="visible-country">
+      <h3><b>Your country: </b></h3>
+      <ul data-bind="foreach: selectedLangs">
+      <li data-bind="text: $data" ></li>
+          <a href="#" data-bind="click: $parent.removePerson"><i class="fa fa-trash-o fa-lg"></i></a>
+      </ul>        
+    </div>  
+</div>  
+</div>
+</body>
+</html>
