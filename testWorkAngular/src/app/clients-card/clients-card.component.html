@@ -1,0 +1,20 @@
+
+<mat-card class="example-card" *ngIf="!loading">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Name: {{client.name}}</mat-card-title>
+    <mat-card-subtitle>Phone: {{client.phone}}</mat-card-subtitle>
+    <mat-card-subtitle>Email: {{client.email}}</mat-card-subtitle>
+    <mat-card-subtitle>DateBirth: {{client.birthDay}}/{{client.birthMonth}}/{{client.birthYear}}</mat-card-subtitle>
+    <mat-card-subtitle>Address: {{client.address}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At debitis dolore dolorum eaque eos illo illum, incidunt mollitia omnis perferendis quos recusandae reiciendis sint ut vel voluptas, voluptates. Repellendus, sunt?
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi cum eos illo in ipsum iste magni maxime necessitatibus nesciunt obcaecati, quae quaerat quas quasi quo quod vero vitae voluptas.
+
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="goBack()"><mat-icon>home</mat-icon> back</button>
+  </mat-card-actions>
+</mat-card>

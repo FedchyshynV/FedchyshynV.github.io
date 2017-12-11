@@ -1,0 +1,62 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <img src="../../assets/lakmus-logo.png" alt="">
+    <span class="example-spacer"></span> &nbsp;&nbsp;&nbsp;
+    <button mat-raised-button color="primary" (click)="openDialog()">addClient</button>
+    <div class="right-side search">
+      <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+      </mat-form-field>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+
+<div class="example-container mat-elevation-z8" >
+
+  <mat-table [dataSource]="dataSource" matSort>
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+      <mat-cell *matCellDef="let row">
+        <a routerLink="/detail/{{row.id}}">
+          {{row.name}}
+        </a>
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="phone">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Phone </mat-header-cell>
+      <mat-cell *matCellDef="let row" > {{row.phone}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Email </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.email}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="dateBirth">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> DateBirth </mat-header-cell>
+      <mat-cell *matCellDef="let row" > {{row.birthDay}}/{{row.birthMonth}}/{{row.birthYear}}
+      </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="address">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Address </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.address}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="gender">
+      <mat-header-cell *matHeaderCellDef mat-sort-header> Gender </mat-header-cell>
+      <mat-cell *matCellDef="let row"> {{row.gender}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;">
+    </mat-row>
+  </mat-table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"> </mat-paginator>
+</div>

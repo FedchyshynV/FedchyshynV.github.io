@@ -1,0 +1,53 @@
+<h1 mat-dialog-title>Add new client</h1>
+<div mat-dialog-content>
+  <div class="example-container">
+    <mat-form-field>
+      <input matInput placeholder="name" [(ngModel)]="name" >
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <span matPrefix>+38 &nbsp;</span>
+      <input type="tel" matInput placeholder="Telephone" [(ngModel)]="phone" >
+      <mat-icon matSuffix>mode_edit</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email" [formControl]="emailFormControl"
+             [errorStateMatcher]="matcher"  [(ngModel)]="email" >
+      <mat-hint>Errors appear instantly!</mat-hint>
+      <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+        Please enter a valid email address
+      </mat-error>
+      <mat-error *ngIf="emailFormControl.hasError('required')">
+        Email is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+
+    <table class="example-full-width" cellspacing="0"><tr>
+      <td><mat-form-field class="example-full-width">
+        <input matInput placeholder="birthDay"  [(ngModel)]="birthDay" maxlength="2">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <input matInput placeholder="birthMonth"   [(ngModel)]="birthMonth" maxlength="2">
+      </mat-form-field></td>
+      <td><mat-form-field class="example-full-width">
+        <input matInput  maxlength="4" placeholder="birthYear"  [(ngModel)]="birthYear" >
+      </mat-form-field></td>
+    </tr></table>
+
+    <mat-form-field>
+      <mat-select placeholder="gender" [(ngModel)]="gender">
+        <mat-option value="male">male</mat-option>
+        <mat-option value="female">female</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput placeholder="address"  [(ngModel)]="address" >
+    </mat-form-field>
+
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-raised-button color="primary" [mat-dialog-close]="true" (click)="postClients()" tabindex="2">Save</button>
+  <button mat-button mat-raised-button color="warn" (click)="onNoClick()" tabindex="-1">No Thanks</button>
+</div>

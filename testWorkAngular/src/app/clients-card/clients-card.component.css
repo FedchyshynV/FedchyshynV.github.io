@@ -1,0 +1,8 @@
+.mat-card {
+  overflow: auto;
+  height: 92vh;
+}
+
+.mat-card-content {
+  max-width: 40vw;
+}

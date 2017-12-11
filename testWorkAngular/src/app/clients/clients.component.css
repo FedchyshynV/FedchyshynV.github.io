@@ -1,0 +1,75 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.example-header {
+  min-height: 64px;
+  padding: 8px 24px 0;
+}
+
+.mat-form-field input{
+  color: #333;
+  border: none;
+  border-radius: 100px;
+  background-color: #fafafa;
+  padding: 5px 16px;
+  margin-left: -6px;
+  width: 180px;
+  max-width: 240px;
+  height: 50%;
+  -webkit-appearance: none;
+  color: blueviolet;
+}
+
+.mat-form-field input:focus{
+  padding: 5px 16px;
+  width: 220px;
+
+}
+
+.mat-table {
+  overflow: auto;
+  height: 80vh;
+}
+.right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  min-width: 150px;
+  height: 100%;
+  margin-right: 10vw;
+}
+input.mat-input-element {
+  margin-top: 0;
+}
+
+.mat-paginator, .mat-paginator-page-size .mat-select-trigger {
+  color: rgba(0,0,0,.94);
+  margin-right: 6vw;
+  font-size: 16px;
+}
+.mat-header-cell {
+  color: rgba(0,0,0,.94);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.mat-input-underline.mat-form-field-underline {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
