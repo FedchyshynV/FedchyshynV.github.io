@@ -5,6 +5,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import {MatPaginatorModule, MatSortModule, MatTableModule, MatInputModule, MatToolbarModule, MatSnackBarModule,
   MatCardModule, MatProgressSpinnerModule, MatIconModule, MatButtonModule, MatDialogModule, MatSelectModule} from '@angular/material';
 
@@ -48,7 +49,7 @@ import { AddClientComponent } from './clients/add-client/add-client.component';
   entryComponents: [
     AddClientComponent
   ],
-  providers: [ClientService],
+  providers: [ClientService, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
